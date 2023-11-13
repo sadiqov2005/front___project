@@ -1097,9 +1097,9 @@ body {
 
 
 .NFT-highlited{
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),  url(../assets/icons/NFT-higlhlited-image.png) ;
     background-size: cover;
-    background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),  url(./assets/icons/NFT-higlhlited-image.png) ;
+    background-repeat: no-repeat;
 }
 
 
@@ -1570,24 +1570,26 @@ text-transform: capitalize;
 .subcribe-form {
     display: flex;
     height: 60px;
-    padding: 16px 0px 16px 20px;
     align-items: center;
     gap: 12px;
     align-self: stretch;
     border-radius: 20px;
     background: var(--Text, #FFF);
     justify-content: space-between;
-    width: 385px;
+   
 
 }
 
 .subcribe-form input {
+    padding: 16px 0px 16px 20px;
+    color: #2B2B2B;
+    outline: none;
     border: none;
     font-family: Work Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%;
+  
 }
 
 
@@ -1801,6 +1803,8 @@ footer>.footer-info {
 
 .subscribe-footer form input {
     border: none;
+    outline: none;
+    color: #2B2B2B;
 }
 
 .subscribe-footer form input::placeholder {

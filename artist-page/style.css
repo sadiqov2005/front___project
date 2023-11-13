@@ -158,6 +158,7 @@ body {
 
 
 .artist-info {
+    margin: 50px;
     display: flex;
     padding: 40px 0px;
     flex-direction: column;
@@ -371,4 +372,421 @@ body {
     font-weight: 600;
     line-height: 140%;
     text-transform: capitalize;
+}
+
+
+.frame-249 .frame-247>.tabs>.tab:first-child button{
+    display: flex;
+padding: 5px 10px;
+align-items: center;
+gap: 10px;
+border-radius: 20px;
+background: #858584;
+border: none;
+}
+
+.frame-249 .frame-247>.tabs>.tab:nth-child(2) button{
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+background: var(--Background---Secondary, #3B3B3B);
+border: none;
+}
+
+.frame-249 .frame-247>.tabs>.tab:nth-child(3) button{
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+background: var(--Background---Secondary, #3B3B3B);
+border: none;
+}
+
+
+
+
+.NFT-cards-section{
+    display: flex;
+padding: 80px 0px;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+align-self: stretch;
+background: var(--Background---Secondary, #3B3B3B);
+}
+
+.NFT-cards-section .NFT-cards-row{
+    display: flex;
+width: 1050px;
+align-items: flex-start;
+gap: 30px;
+}
+
+.NFT-cards-section .NFT-cards-row .Distant_Galaxy{
+    display: flex;
+/* height: 479px; */
+flex-direction: column;
+align-items: center;
+flex: 1 0 0;
+border-radius: 20px;
+background: var(--Background, #2B2B2B);
+}
+
+
+.NFT-cards-section .NFT-cards-row .Distant_Galaxy .NFT-info{
+    display: flex;
+padding: 20px 30px 25px 30px;
+flex-direction: column;
+align-items: flex-start;
+gap: 25px;
+align-self: stretch;
+}
+
+
+.NFT-cards-section .NFT-cards-row .Distant_Galaxy .NFT-info>.artist-info{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 5px;
+align-self: stretch;
+margin: 0;
+padding: 0;
+}
+
+
+.NFT-cards-section .NFT-cards-row .Distant_Galaxy .NFT-info>.artist-info>p{
+    color: var(--White, #FFF);
+
+/* H5 - Work Sans */
+font-family: Work Sans;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 30.8px */
+text-transform: capitalize;
+}
+
+.NFT-cards-section .NFT-cards-row .Distant_Galaxy .NFT-info .artist-avatar-name{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.NFT-cards-section .NFT-cards-row .Distant_Galaxy .NFT-info .artist-avatar-name p{
+    color: var(--White, #FFF);
+
+/* Base (Body) - Space Mono */
+font-family: Space Mono;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+
+.NFT-cards-section .NFT-cards-row .Distant_Galaxy .NFT-info .additional-info{
+    display: flex;
+align-items: flex-start;
+align-self: stretch;
+}
+
+.NFT-cards-section .NFT-cards-row .Distant_Galaxy .NFT-info .additional-info>.price{
+    display: flex;
+padding-right: 0px;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+flex: 1 0 0;
+}
+
+.NFT-cards-section .NFT-cards-row .Distant_Galaxy .NFT-info .additional-info>.price>p:first-child{
+    color: #858584;
+
+/* Caption - Space Mono */
+font-family: Space Mono;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 110%; /* 13.2px */
+}
+
+
+
+.NFT-cards-section .NFT-cards-row .Distant_Galaxy .NFT-info .additional-info>.price>p:last-child{
+    color: var(--White, #FFF);
+
+/* Base (Body) - Space Mono */
+font-family: Space Mono;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+.NFT-cards-section .NFT-cards-row .Distant_Galaxy .NFT-info .additional-info .highest-bid>p:first-child{
+    color: #858584;
+
+/* Caption - Space Mono */
+font-family: Space Mono;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 110%; /* 13.2px */
+}
+
+
+
+.NFT-cards-section .NFT-cards-row .Distant_Galaxy .NFT-info .additional-info .highest-bid>p:last-child{
+    color: var(--White, #FFF);
+
+/* Base (Body) - Space Mono */
+font-family: Space Mono;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+
+
+
+
+
+footer {
+    display: flex;
+    padding: 40px 195px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+    background: var(--Background---Secondary, #3B3B3B);
+}
+
+footer>.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 987px;
+}
+
+.frame-footer {
+    display: flex;
+    width: 1049.414px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+.NFT-marketplace-info {
+    display: flex;
+    width: 327.414px;
+    padding-right: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.NFT-marketplace-info .additional-info-NFT {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.NFT-marketplace-info .additional-info-NFT>p {
+    color: #CCC;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    width: 238px;
+
+}
+
+
+.NFT-marketplace-info .additional-info-NFT .community-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.NFT-marketplace-info .additional-info-NFT .community-info>p {
+    color: #CCC;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+
+}
+
+.NFT-marketplace-info .additional-info-NFT .community-info .icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+
+.explore-footer {
+    display: flex;
+    width: 240px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.explore-footer>p {
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    text-transform: capitalize;
+}
+
+
+.explore-footer .pages-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.explore-footer .pages-footer p {
+    color: #CCC;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+.subscribe-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.subscribe-footer>p {
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    text-transform: capitalize;
+}
+
+
+.subscribe-footer .subscribe-form-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.subscribe-footer .subscribe-form-info>p {
+    color: #CCC;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    width: 300px;
+}
+
+.subscribe-footer form {
+    display: flex;
+    width: 420px;
+    height: 60px;
+    padding: 16px 0px 16px 20px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    background: var(--Text, #FFF);
+    justify-content: space-between;
+}
+
+.subscribe-footer form input {
+    outline: none;
+    color: #2B2B2B;
+    
+}
+
+.subscribe-footer form input::placeholder {
+    color: var(--Background, #2B2B2B);
+
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+.subscribe-footer form button {
+    display: flex;
+    height: 60px;
+    padding: 0px 50px;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    gap: 12px;
+    border-radius: 20px;
+    background: var(--Call-to-Action, #A259FF);
+    transition: transform 700ms ease-in-out;
+    cursor: pointer;
+}
+
+.subscribe-footer form button:hover {
+    transform: scale(1.1);
+}
+
+
+.subscribe-footer form button>p {
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.divider {
+    width: 1049.414px;
+    height: 1px;
+    background: #858584;
+}
+
+.frame-footer p {
+    color: #CCC;
+
+    /* Caption - Work Sans */
+    font-family: Work Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    /* 13.2px */
+}
+
+
+.NFT-logo-footer{
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+}
+
+.NFT-marketplace-info>.NFT-logo-footer{
+    cursor: pointer;
 }

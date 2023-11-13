@@ -3,7 +3,6 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: Work Sans;
-
     color: #FFF;
 }
 
@@ -52,7 +51,6 @@ body {
 
 
 .main-nav>ul>li {
-
     list-style: none;
     display: flex;
     height: 46px;
@@ -60,17 +58,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 12px;
-
-
 }
 
 .main-nav>ul>li:hover {
     scale: 0.9;
-
     transition: scale 0.1s;
-
-    /* transition: all 0.3s ease; */
-
 }
 
 
@@ -84,8 +76,6 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
-    /* 22.4px */
-
 }
 
 
@@ -127,139 +117,356 @@ body {
 
 
 
-.create-account-section {
+
+
+
+
+
+.headline-subhead-section{
     display: flex;
-    align-items: center;
-    gap: 60px;
-    align-self: stretch;
-    background: var(--Background, #2B2B2B);
+padding: 80px 0px;
+flex-direction: column;
+align-items: center;
+gap: 40px;
+align-self: stretch;
+background: var(--Background, #2B2B2B);
 }
 
-.create-account-section>img {
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-}
-
-.create-account-section .create-account-form {
+.headline-subhead-section>.headline-subhead{
     display: flex;
-    padding: 100px 0px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-    flex: 1 0 0;
+width: 1050px;
+flex-direction: column;
+align-items: flex-start;
+gap: 20px;
+
 }
 
-.create-account-section .create-account-form>header {
+.headline-subhead-section>.headline-subhead>p:first-child{
     display: flex;
-    width: 460px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-}
+align-items: flex-start;
+gap: 10px;
+align-self: stretch;
+color: var(--White, #FFF);
 
-
-.create-account-section .create-account-form>header>p:first-child {
-    color: var(--White, #FFF);
-    font-family: Work Sans;
-    font-size: 51px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110%;
-    text-transform: capitalize;
-}
-
-.create-account-section .create-account-form>header>p:last-child {
-    color: var(--White, #FFF);
-    font-family: Work Sans;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    text-transform: capitalize;
-    width: 460px;
-}
-
-
-.create-account-form {
-    display: flex;
-    width: 330px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-}
-
-.type-forms {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    align-self: stretch;
-}
-
-.type-forms input {
-    display: flex;
-    height: 46px;
-    padding: 16px 20px;
-    align-items: center;
-    gap: 12px;
-    align-self: stretch;
-    border-radius: 20px;
-    border: 1px solid var(--caption-label-text, #858584);
-    background: var(--Text, #FFF);
-    width: 330px;
-    color: black;
-    outline: none;
-}
-
-
-.type-forms input::placeholder{
-    color: var(--Background, #2B2B2B);
-
-/* Base(Body) - Work Sans */
+/* H2 - Work Sans */
 font-family: Work Sans;
+font-size: 51px;
+font-style: normal;
+font-weight: 600;
+line-height: 110%; /* 56.1px */
+text-transform: capitalize;
+}
+
+.headline-subhead-section>.headline-subhead>p:last-child{
+    align-self: stretch;
+    color: var(--White, #FFF);
+font-family: Work Sans;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 35.2px */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+align-self: stretch;
+}
+
+
+
+
+
+
+.frame{
+    display: flex;
+padding: 0px 10px;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+background: var(--Background, #2B2B2B);
+}
+
+.frame>.tabs{
+    display: flex;
+width: 1050px;
+align-items: flex-start;
+}
+
+
+.frame>.tabs>.tab{
+    display: flex;
+height: 60px;
+padding: 0px 30px;
+justify-content: center;
+align-items: center;
+gap: 16px;
+flex: 1 0 0;
+}
+
+.frame>.tabs>.tab>p{
+    color: var(--caption-label-text, #858584);
+text-align: center;
+
+/* H5 - Work Sans */
+font-family: Work Sans;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 30.8px */
+text-transform: capitalize;
+}
+
+
+
+.frame>.tabs>.tab:first-child{
+    display: flex;
+height: 60px;
+padding: 0px 30px;
+justify-content: center;
+align-items: center;
+gap: 16px;
+flex: 1 0 0;
+border-bottom: 2px solid var(--caption-label-text, #858584);
+}
+
+.frame>.tabs>.tab:first-child>p{
+    color: var(--White, #FFF);
+text-align: center;
+
+/* H5 - Work Sans */
+font-family: Work Sans;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 30.8px */
+text-transform: capitalize;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rankings{
+    display: flex;
+padding: 40px 0px;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+align-self: stretch;
+background: var(--Background, #2B2B2B);
+}
+
+.rankings>.table-header{
+    display: flex;
+width: 1050px;
+height: 46px;
+padding: 12px 0px;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+border-radius: 20px;
+border: 1px solid var(--Background---Secondary, #3B3B3B);
+}
+
+.rankings>.table-header>.table-headers{
+    display: flex;
+width: 1050px;
+padding: 0px 20px;
+justify-content: space-between;
+align-items: center;
+}
+
+.rankings>.table-header>.table-headers>.rank-artist{
+    display: flex;
+width: 430px;
+align-items: center;
+gap: 20px;
+flex-shrink: 0;
+
+}
+
+.rankings>.table-header>.table-headers>.rank-artist>p:first-child{
+    color: var(--caption-label-text, #858584);
+text-align: center;
+
+/* Base (Body) - Space Mono */
+font-family: Space Mono;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+width: 30px;
+flex-shrink: 0;
+}
+
+.rankings>.table-header>.table-headers>.rank-artist>p:nth-child(2){
+    color: var(--caption-label-text, #858584);
+
+/* Base (Body) - Space Mono */
+font-family: Space Mono;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 140%; /* 22.4px */
 }
 
-.create-account-form button{
+.rankings>.table-header>.table-headers .stats-header{
     display: flex;
-height: 46px;
-padding: 0px 50px;
-justify-content: center;
+justify-content: flex-end;
 align-items: center;
-gap: 12px;
-align-self: stretch;
-border-radius: 20px;
-background: var(--Call-to-Action, #A259FF);
-border: none;
-width: 330px;
-cursor: pointer;
-transition: transform 700ms ease-in-out;
+gap: 20px;
 
 }
 
-.create-account-form button:hover{
-    transform: scale(0.8);
-}
+.rankings>.table-header>.table-headers .stats-header p{
+    align-self: stretch;
+    color: var(--caption-label-text, #858584);
 
-.create-account-form button>p{
-    color: #FFF;
-text-align: center;
-font-family: Work Sans;
+/* Base (Body) - Space Mono */
+font-family: Space Mono;
 font-size: 16px;
 font-style: normal;
-font-weight: 600;
+font-weight: 400;
 line-height: 140%; /* 22.4px */
 }
 
-.create-account-section form{
+
+
+
+
+
+
+.table-items{
     display: flex;
-width: 330px;
+width: 1050px;
+height: 84px;
+padding: 12px 0px;
 flex-direction: column;
-align-items: flex-start;
-gap: 30px;
+align-items: center;
+gap: 10px;
+border-radius: 20px;
+background: var(--Background---Secondary, #3B3B3B);
+cursor: pointer;
 }
+
+
+.table-items>.table-itmes-in{
+    display: flex;
+width: 1050px;
+padding: 0px 20px;
+justify-content: space-between;
+align-items: center;
+}
+
+.table-items>.table-itmes-in>.rank-artist{
+    display: flex;
+width: 430px;
+align-items: center;
+gap: 20px;
+flex-shrink: 0;
+}
+
+
+.table-items>.table-itmes-in>.rank-artist>.rank-number{
+    background-color: #2B2B2B;
+    border-radius: 20px;
+    height: 30px;
+    min-width: 30px;
+    mix-blend-mode: normal;
+    position: relative;
+    border: none;
+}
+
+
+.table-items>.table-itmes-in>.rank-artist .artist-card{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+flex: 1 0 0;
+border-radius: 20px;
+transition: transform 0.3s ease;
+
+}
+
+.table-items>.table-itmes-in>.rank-artist .artist-card:hover{
+    transform: scale(0.9);
+}
+
+
+.table-items>.table-itmes-in>.rank-artist .artist-card p{
+    color: #FFF;
+
+    /* H5 - Work Sans */
+    font-family: Work Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 30.8px */
+    text-transform: capitalize;
+}
+
+
+.table-items>.table-itmes-in .stats{
+    display: flex;
+justify-content: flex-end;
+align-items: center;
+gap: 20px;
+}
+
+
+.table-items>.table-itmes-in .stats p:first-child{
+    color: var(--Green, #00AC4F);
+
+/* Base (Body) - Space Mono */
+font-family: Space Mono;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+
+}
+
+.table-items>.table-itmes-in .stats p:nth-child(2){
+    color: var(--Text, #FFF);
+
+/* Base (Body) - Space Mono */
+font-family: Space Mono;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+
+
+.table-items>.table-itmes-in .stats p:nth-child(3){
+    color: var(--Text, #FFF);
+
+/* Base (Body) - Space Mono */
+font-family: Space Mono;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+
+}
+
+
+
+
+
+
 
 
 
@@ -299,6 +506,11 @@ footer>.footer-info {
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
+}
+
+
+.NFT-marketplace-info>.NFT-logo-footer {
+    cursor: pointer;
 }
 
 .NFT-marketplace-info .additional-info-NFT {
@@ -484,18 +696,15 @@ footer>.footer-info {
 .frame-footer p {
     color: #CCC;
 
-    /* Caption - Work Sans */
     font-family: Work Sans;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
-    /* 13.2px */
 }
 
-
-.NFT-logo-footer{
+.NFT-logo-footer {
     display: flex;
     flex-direction: row;
     column-gap: 8px;
-} 
+}
