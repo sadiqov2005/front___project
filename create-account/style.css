@@ -235,12 +235,12 @@ background: var(--Call-to-Action, #A259FF);
 border: none;
 width: 330px;
 cursor: pointer;
-transition: transform 700ms ease-in-out;
+transition: transform 500ms ease-in-out;
 
 }
 
 .create-account-form button:hover{
-    transform: scale(0.8);
+    transform: scale(0.95);
 }
 
 .create-account-form button>p{

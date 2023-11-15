@@ -7,13 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- <script src="./script.js" defer></script> -->
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 </head>
 
 <body>
 
 
 
-    <header class="main-header">
+    <header class="main-header" >
         <div class="logo">
             <img src="../assets/icons/storengfot.svg" alt="storengfot">
             <img src="../assets/icons/NFT.svg" alt="NFT MarketPlace">
@@ -37,7 +40,7 @@
     </header>
 
 
-    <section class="hero">
+    <section class="hero" >
         <div class="hero-frame">
             <div class="left-columnInHeroFrame">
 
@@ -57,6 +60,7 @@
 
                 <div class="right-columnInHeroFrame">
                     <img src="../assets/icons/heroanimationtransparentbck-2.gif" alt="">
+                    <!-- <img width="100%" height="100%" src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/files/heroanimationtransparentbck-2.gif" anima-src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/files/heroanimationtransparentbck-2.gif"> -->
                     <div class="frame">
 
                         <div class="space-walking">Space Walking</div>
@@ -116,7 +120,7 @@
 
 
 
-    <section class="Trending_collection">
+    <section class="Trending_collection"  >
 
 
 
@@ -210,7 +214,7 @@
 
 
 
-    <section class="Top-creators">
+    <section class="Top-creators" style="display: none;">
         <header>
             <div class="section-headline-top-creators">
                 <p>Top creators</p>
@@ -407,7 +411,7 @@
 
 
 
-    <section class="browse-catagories">
+    <section class="browse-catagories"  >
         <div class="browse-headline">
             Browse Categories
         </div>
@@ -451,7 +455,12 @@
                         <img src="../assets/icons/photography-image.png" alt="">
                     </div>
                     <div class="collection-name">
-                        Photography
+                        
+                            Photography
+
+                        
+
+                        
                     </div>
                 </div>
 
@@ -460,7 +469,7 @@
                 
             </div>
 
-            <div class="card-down">
+            <div class="card-down" >
 
 
                 <div class="video-card">
@@ -513,7 +522,7 @@
 
 
 
-    <section class="discover-NFTs">
+    <section class="discover-NFTs" >
 
         
         <header class="headline-with-button">
@@ -601,7 +610,9 @@
                 </div>
             </div>
 
-       
+            <button>
+                <img src="../assets/icons/Eye_see_all.png" alt=""> <p>See All</p>
+            </button>
 
         </div>
     </section>
@@ -609,7 +620,7 @@
 
 
 
-    <section class="NFT-highlited">
+    <section class="NFT-highlited" >
 
         <div class="NFT-info">
             <div class="frame-nft">
@@ -619,6 +630,29 @@
                         <p>Shroomie</p>
                     </div>
                     <p class="magic">Magic Mashrooms</p>
+
+                    <div class="auction-timer-none">
+                        <p>Auction ends in:</p>
+                        <div class="timer">
+                            <div class="hours">
+                                <p>59</p>
+                                <p>Hours</p>
+                            </div>
+                            <p>:</p>
+                            <div class="minutes">
+                                <p>59</p>
+                                <p>Minutes</p>
+                            </div>
+                            <p>:</p>
+                            <div class="seconds">
+                                <p>59</p>
+                                <p>Seconds</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                     <button>
                         <img src="../assets/icons/Eye_see_all.png" alt="">
                         <p>See NFT</p>
@@ -650,7 +684,7 @@
 
 
 
-<section class="How-it-works">
+<section class="How-it-works"  >
     <header class="headline-howit-works">
         <p>How it works</p>
         <p>Find out how to get started</p>
@@ -710,7 +744,7 @@
 
 
 
-<section class="subscribe-widget-section">
+<section class="subscribe-widget-section" style="display: none;">
 
     <div class="subscribe-widget-container">
         <img src="../assets/icons/subscribe-widget-Photo.png" alt="subscribe-widget-Photo.png">
@@ -724,7 +758,7 @@
             <form class="subcribe-form">
                 <label for="email"></label>
                 <input type="email" placeholder="Enter your email here">
-                <button>
+                <button id="subscribe-button">
                     <img src="../assets/icons/subscribe-image.png" alt="">
                     <p>Subscribe</p>
                 </button>
@@ -737,7 +771,7 @@
 
 
 
-<footer>
+<footer style="display: none;">
     <div class="footer-info">
         <div class="NFT-marketplace-info">
             <div class="NFT-logo-footer">
@@ -776,7 +810,7 @@
                 <p>Get exclusive promotions & updates straight to your inbox.</p>
                 <form >
                     <input type="email" placeholder="Enter your email here">
-                    <button>
+                    <button id="subscribe-button">
                         <p>Subscribe</p>
                     </button>
                 </form>
@@ -794,7 +828,7 @@
 
 
 
-
+<script src="./script.js"></script>
 </body>
 
 </html>

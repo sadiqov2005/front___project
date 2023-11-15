@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
  
 </head>
 <body>
@@ -40,27 +43,27 @@
                 <p>Create account</p>
                 <p>Welcome! enter your details and start creating, collecting and selling NFTs.</p>
             </header>
-
-            <form action="">
+            <form id="form-create-account" method="GET" action="submit">
                 <div class="type-forms">
-                    <input id="Hello" type="text" placeholder="Username">
-                    <input type="email" placeholder="Email Address">
-                    <input type="password" placeholder="Password">
-                    <input type="password" placeholder="Confirm Password">
+                    <input id="username" name="username" type="text" placeholder="Username" required>
+                    <input id="email" name="email" type="email" placeholder="Email Address" required>
+                    <input id="password" name="password" type="password" placeholder="Password" required>
+                    <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm Password" required>
                 </div>
-                <button>
+                <button id="create-account-btn" type="submit">
                     <p>Create account</p>
                 </button>
             </form>
+            
         </div>
     </section>
-
-
+    
+    
     <footer>
     <div class="footer-info">
         <div class="NFT-marketplace-info">
             <div class="NFT-logo-footer">
-
+                
                 <img src="../assets/icons/storengfot.svg" alt="storengfot">
                 <img src="../assets/icons/NFT.svg" alt="NFT MarketPlace">
             </div>
@@ -87,7 +90,7 @@
             </div>
         </div>
 
-
+        
         <div class="subscribe-footer">
             <p>Join our weekly digest</p>
             <div class="subscribe-form-info">
@@ -101,7 +104,7 @@
             </div>
         </div>
 
-
+        
     </div>
     <div class="frame-footer">
         <div class="divider"></div>
@@ -111,5 +114,6 @@
 
 
 
+<script src="script.js"></script>
 </body>
 </html>
