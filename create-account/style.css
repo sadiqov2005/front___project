@@ -827,6 +827,7 @@ gap: 30px;
 
 
 
+
 footer {
     display: flex;
     padding: 40px 195px;
@@ -834,15 +835,12 @@ footer {
     align-items: center;
     gap: 30px;
     align-self: stretch;
-    padding-bottom: 0;
-    height: 700px;
-
-
+    background: var(--Background---Secondary, #3B3B3B);
 }
 
 footer>.footer-info {
     display: flex;
-    width: 315px;
+    width: 690px;
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
@@ -857,7 +855,20 @@ footer>.footer-info {
 } */
 
 
+.NFT-marketplace-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
 
+.NFT-marketplace-info .additional-info-NFT {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
 
 .NFT-marketplace-info .additional-info-NFT>p {
     color: #CCC;
@@ -866,7 +877,7 @@ footer>.footer-info {
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    width: 315px;
+    width: 238px;
 
 }
 
@@ -876,6 +887,23 @@ footer>.footer-info {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
+}
+
+.NFT-marketplace-info .additional-info-NFT .community-info>p {
+    color: #CCC;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+
+}
+
+.NFT-marketplace-info .additional-info-NFT .community-info .icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
 }
 
 
@@ -899,10 +927,41 @@ footer>.footer-info {
 }
 
 
+.explore-footer .pages-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.explore-footer .pages-footer p {
+    color: #CCC;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
 
 
+.subscribe-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
 
-
+.subscribe-footer>p {
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    text-transform: capitalize;
+}
 
 
 .subscribe-footer .subscribe-form-info {
@@ -919,35 +978,26 @@ footer>.footer-info {
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    width: 315px;
+    width: 690px;
     
 }
 
 .subscribe-footer form {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    align-self: stretch;
-    width: 315px;
-    background-color: #3B3B3B;
-    padding: 0;
+    width: 420px;
+    height: 60px;
+    padding: 16px 0px 16px 20px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    background: var(--Text, #FFF);
+    justify-content: space-between;
 }
 
 .subscribe-footer form input {
     border: none;
     outline: none;
     color: #2B2B2B;
-    display: flex;
-width: 315px;
-height: 46px;
-padding: 16px 20px;
-align-items: center;
-gap: 12px;
-border-radius: 20px;
-border: 1px solid var(--caption-label-text, #858584);
-background: var(--Text, #FFF);
-border: none;
 }
 
 .subscribe-footer form input::placeholder {
@@ -963,16 +1013,16 @@ border: none;
 
 .subscribe-footer form button {
     display: flex;
-    height: 66px;
+    height: 60px;
     padding: 0px 50px;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    border: none;
     gap: 12px;
-    align-self: stretch;
     border-radius: 20px;
-background: var(--Call-to-Action, #A259FF);
-padding: 10px;
-
+    background: var(--Call-to-Action, #A259FF);
+    transition: transform 700ms ease-in-out;
+    cursor: pointer;
 }
 
 
@@ -985,17 +1035,15 @@ padding: 10px;
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
-
 }
 
 .divider {
-    width: 239px;
+    width: 1049.414px;
     height: 1px;
     background: #858584;
 }
 
 .frame-footer p {
-
     color: #CCC;
 
     /* Caption - Work Sans */
@@ -1005,6 +1053,8 @@ padding: 10px;
     font-weight: 400;
     line-height: 110%;
     /* 13.2px */
+}
+.frame-footer{
     display: none;
 }
 
@@ -1014,9 +1064,6 @@ padding: 10px;
     column-gap: 8px;
 }
 
-.frame-footer{
-    display: none;
-}
 
 
 
@@ -1045,6 +1092,211 @@ padding: 10px;
         border: none;
         cursor: pointer;
     }
+
+
+
+
+    footer {
+        display: flex;
+        padding: 40px 195px;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        align-self: stretch;
+        padding-bottom: 0;
+        height: 700px;
+    
+    
+    }
+    
+    footer>.footer-info {
+        display: flex;
+        width: 315px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    /* 
+    .frame-footer {
+        display: flex;
+        width: 1049.414px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    } */
+    
+    
+    
+    
+    .NFT-marketplace-info .additional-info-NFT>p {
+        color: #CCC;
+        font-family: Work Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        width: 315px;
+    
+    }
+    
+    
+    .NFT-marketplace-info .additional-info-NFT .community-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    
+    
+    .explore-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    }
+    
+    .explore-footer>p {
+        color: #FFF;
+        font-family: Space Mono;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+        text-transform: capitalize;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .subscribe-footer .subscribe-form-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .subscribe-footer .subscribe-form-info>p {
+        color: #CCC;
+        font-family: Work Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        width: 315px;
+        
+    }
+    
+    .subscribe-footer form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+        width: 315px;
+        background-color: #3B3B3B;
+        padding: 0;
+    }
+    
+    .subscribe-footer form input {
+        border: none;
+        outline: none;
+        color: #2B2B2B;
+        display: flex;
+    width: 315px;
+    height: 46px;
+    padding: 16px 20px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    border: 1px solid var(--caption-label-text, #858584);
+    background: var(--Text, #FFF);
+    border: none;
+    }
+    
+    .subscribe-footer form input::placeholder {
+        color: var(--Background, #2B2B2B);
+    
+        font-family: Work Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    
+    
+    .subscribe-footer form button {
+        display: flex;
+        height: 66px;
+        padding: 0px 50px;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        align-self: stretch;
+        border-radius: 20px;
+    background: var(--Call-to-Action, #A259FF);
+    padding: 10px;
+    
+    }
+    
+    
+    
+    .subscribe-footer form button>p {
+        color: #FFF;
+        text-align: center;
+        font-family: Work Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+    
+    }
+    
+    .divider {
+        width: 239px;
+        height: 1px;
+        background: #858584;
+    }
+    
+    .frame-footer p {
+    
+        color: #CCC;
+    
+        /* Caption - Work Sans */
+        font-family: Work Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        /* 13.2px */
+        display: none;
+    }
+    
+    .NFT-logo-footer{
+        display: flex;
+        flex-direction: row;
+        column-gap: 8px;
+    }
+    
+    .frame-footer{
+        display: none;
+    }
+    
+
+
+
+
+
+
+
+
+
+
 
 
     .create-account-section{
