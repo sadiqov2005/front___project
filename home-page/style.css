@@ -2551,7 +2551,7 @@ background: #3B3B3B;
 
 .subcribe-form input {
     display: flex;
-    height: 46px;
+    height: 46px;   
     padding: 16px 20px;
     align-items: center;
     gap: 12px;
