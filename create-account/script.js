@@ -110,7 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
 createAccountBtn.addEventListener('click', (e) => {
     e.preventDefault();
     console.log('clicked');
@@ -121,35 +120,23 @@ createAccountBtn.addEventListener('click', (e) => {
     const confirmPassword = inputConfirmPassword.value;
 
     function checkUsername(username) {
-        a = username.length >= 4;
-        if (a) {
-            console.log("Username is valid");
-        } else {
-            console.log("Username is INVALID");
-        }
-        return a;
+        const isValid = username.length >= 4;
+        console.log(isValid ? "Username is valid" : "Username is INVALID");
+        return isValid;
     }
 
     function checkEmail(email) {
         const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        b = emailRegex.test(email);
-        if (b) {
-            console.log("email is valid");
-        } else {
-            console.log("email is INVALID");
-        }
-        return b;
+        const isValid = emailRegex.test(email);
+        console.log(isValid ? "Email is valid" : "Email is INVALID");
+        return isValid;
     }
 
     function checkPassword(password) {
         const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
-        c = passwordRegex.test(password);
-        if (c) {
-            console.log("pass is valid");
-        } else {
-            console.log("pass is INVALID");
-        }
-        return c;
+        const isValid = passwordRegex.test(password);
+        console.log(isValid ? "Password is valid" : "Password is INVALID");
+        return isValid;
     }
 
     const isUsernameValid = checkUsername(username);
@@ -159,7 +146,7 @@ createAccountBtn.addEventListener('click', (e) => {
     if (isUsernameValid && isEmailValid && isPasswordValid && password === confirmPassword) {
         showToast("Success! Form is valid.", "linear-gradient(to right,#2ecc71, #27ae60)");
     } else {
-        showToast("Invalid input. Please check your details.");
+        showToast("Invalid input. Please check your details.", "linear-gradient(to right,#e74c3c, #c0392b)");
     }
 });
 
@@ -174,6 +161,7 @@ function showToast(message, background) {
         },
     }).showToast();
 }
+
 
 
 
