@@ -1,5 +1,20 @@
+let allCreators=[];
+const allCreatorsURL='http://localhost:3000/api/creators';
 
 
+async function getCreatorsFromServer(){
+    const res = await fetch(allCreatorsURL)
+allCreators = await res.json()
+    console.log(allCreators);
+    allCreators.array.forEach(element => {
+        
+    });
+
+
+
+}
+
+getCreatorsFromServer();
 
     const marketplaceElement=document.querySelector('.main-nav>ul>li:first-child');
     const rankingsElement=document.querySelector('.main-nav>ul>li:nth-child(2)');
@@ -12,6 +27,7 @@
     const getStartedBtn=document.querySelector(".left-columnInHeroFrame>.row3>button");
     const subscribeFooterBtn = document.querySelector('.subscribe-footer form button');
     const subscribeFooterInput=document.querySelector('.subscribe-footer input');
+
 
 
    // validations
@@ -138,3 +154,16 @@ function openRankings(){
 document.addEventListener("DOMContentLoaded", () => {
     openRankings();
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
